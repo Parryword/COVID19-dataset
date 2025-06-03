@@ -18,8 +18,8 @@ if __name__ == '__main__':
 
     print(df)
 
-    features = ["Age", "Symptoms", "Severity", "Smoking_Status", "BMI", "Preexisting_Condition"]
-    target = 'Hospitalized'
+    features = ["Age", "Symptoms", "Severity", "Smoking_Status", "BMI", "Preexisting_Condition", "Hospitalized", "Vaccination_Status"]
+    target = 'Reinfection'
     x = df[features]
     y = df[target]
     x_train = x[:500]
