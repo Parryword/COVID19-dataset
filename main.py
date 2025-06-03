@@ -35,7 +35,7 @@ if __name__ == '__main__':
     y_pred = model.predict(x_test)
     print("Accuracy:", accuracy_score(y_test, y_pred))
 
-    convert = lambda x: ['yes' if val == 0 else 'no' for val in x]
+    convert = lambda x: ['no' if val == 0 else 'yes' for val in x]
 
     y_test_converted = convert(y_test)
     y_pred_converted = convert(y_pred)
